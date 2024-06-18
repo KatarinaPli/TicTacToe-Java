@@ -13,6 +13,9 @@ public class TicTacToe {
     public TicTacToe(){
         board.setVisible(true);
         board.setSize(boardWidth, boardHeight);
-
+        board.setLocationRelativeTo(null); //set the frame in the center of the screen
+        board.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        board.setResizable(false);
+        board.setLayout(new BorderLayout());
     }
 }
